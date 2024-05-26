@@ -12,12 +12,12 @@ public class PlayerPrefInfo : MonoBehaviour
     public void ImageChangeBtn (int _img)
     {
         img = _img;
+        PlayerPrefs.SetInt("img", img);
     }
 
     public void SaveInfo ()
     {
         PlayerPrefs.SetInt("img",img);
         PlayerPrefs.SetString("name",name.text);
-        SceneManager.LoadScene(0);
     }
 }
