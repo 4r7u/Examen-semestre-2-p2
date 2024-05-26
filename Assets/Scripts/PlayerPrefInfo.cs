@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPrefInfo : MonoBehaviour
 {
@@ -17,5 +18,6 @@ public class PlayerPrefInfo : MonoBehaviour
     {
         PlayerPrefs.SetInt("img",img);
         PlayerPrefs.SetString("name",name.text);
+        SceneManager.LoadScene(0);
     }
 }
