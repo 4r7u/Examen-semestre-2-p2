@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Outline
-  m_Shader: {fileID: -6465566751694194690, guid: dffd86218b9b8d243a43948916c8a67f,
+  m_Shader: {fileID: -6465566751694194690, guid: 2d330971b77567e46afd19a9a5879af2,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -111,14 +111,14 @@ Material:
     - _EmilExpo: 0
     - _Emilint: 0
     - _EnvironmentReflections: 1
-    - _FadeDistance: 76.5
+    - _FadeDistance: 45
     - _Freshnel: 2.17
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0.664
     - _OcclusionStrength: 1
-    - _OutlineThicness: 0.0173
+    - _OutlineThicness: 0.015
     - _Parallax: 0.005
     - _Power: 0.63
     - _QueueControl: 0
