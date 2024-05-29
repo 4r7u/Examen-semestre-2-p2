@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58afaa58979543142846f71c807fcd2b, type: 3}
+  m_Name: Prueba
+  m_EditorClassIdentifier: 
+  name: Winnie Pooh
+  description: "Un oso con problemas de adicci\xF3n a la miel"
+  typetype: Oso adicto
+  atk: 5000
+  def: 5000
+  image: {fileID: 21300000, guid: 6fcf60da04ec1a94db2573051a43fb23, type: 3}
+  type: {fileID: 21300000, guid: c187c058d8c7a4843a952394a3b39a15, type: 3}
+  stars: {fileID: 21300000, guid: 68cbe00534ebccd459dc930243a09ce4, type: 3}
+  color: {r: 0.7735849, g: 0.7225447, b: 0.22915626, a: 1}
