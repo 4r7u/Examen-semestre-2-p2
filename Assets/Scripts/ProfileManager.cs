@@ -16,11 +16,11 @@ public class profileManager : MonoBehaviour
     {
         title.text = profile.level.ToString();
         nivel.text = profile.level;
-        gameObject.GetComponent<RawImage>().color = profile.color;
+        //gameObject.GetComponent<RawImage>().color = profile.color;
     }
 
     private void Update()
     {
-        //gameObject.GetComponent<RawImage>().color = profile.color;
+        gameObject.GetComponent<RawImage>().color = profile.color;
     }
 }

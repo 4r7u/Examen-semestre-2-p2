@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] Profile profile;
+
    public void PlayGame()
     {
         SceneManager.LoadScene(1);
