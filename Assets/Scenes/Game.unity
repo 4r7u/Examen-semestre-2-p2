@@ -763,7 +763,7 @@ PrefabInstance:
     - target: {fileID: 965564832357352832, guid: 46065216af952c640af7d2911a4ff5ed,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 965564832357352832, guid: 46065216af952c640af7d2911a4ff5ed,
         type: 3}
@@ -1860,6 +1860,11 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1913892060}
+    - target: {fileID: 1293673560606184446, guid: bc1da161f5bd5af4691f47c33716a79c,
+        type: 3}
+      propertyPath: m_Rigs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6491299097005533324, guid: bc1da161f5bd5af4691f47c33716a79c,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -1988,6 +1993,11 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1913892057}
+    - target: {fileID: 2596604157590398713, guid: abad48f232e5ef640a6ebca4429d27e8,
+        type: 3}
+      propertyPath: m_Rigs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2596604157590398713, guid: abad48f232e5ef640a6ebca4429d27e8,
         type: 3}
       propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.size
@@ -3838,6 +3848,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 33.005
       objectReference: {fileID: 0}
+    - target: {fileID: 23000011623747518, guid: 7cb9bb780861e9e49a16aef2342c3be6,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000011623747518, guid: 7cb9bb780861e9e49a16aef2342c3be6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: d55c912eb070aa04ea3501d0bbdcb586, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5660,6 +5680,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -360
       objectReference: {fileID: 0}
+    - target: {fileID: 23494581224832600, guid: 2298d5ead9d9c4340bce718cebe87aca,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 23494581224832600, guid: 2298d5ead9d9c4340bce718cebe87aca,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: d55c912eb070aa04ea3501d0bbdcb586, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6273,6 +6303,11 @@ PrefabInstance:
       objectReference: {fileID: 1258444163}
     - target: {fileID: 3378270022640746742, guid: 3b822931767b0be4da81ca74b37bbc38,
         type: 3}
+      propertyPath: throwForce
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3378270022640746742, guid: 3b822931767b0be4da81ca74b37bbc38,
+        type: 3}
       propertyPath: attackPoint
       value: 
       objectReference: {fileID: 515612504}
@@ -6497,6 +6532,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.1111916
       objectReference: {fileID: 0}
+    - target: {fileID: 23000012588795222, guid: e473b2a2cd70e0a4aa82f0476ec3b386,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000012588795222, guid: e473b2a2cd70e0a4aa82f0476ec3b386,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d55c912eb070aa04ea3501d0bbdcb586, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
