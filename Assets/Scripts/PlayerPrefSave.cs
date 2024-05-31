@@ -31,6 +31,6 @@ public class PlayerPrefSave : MonoBehaviour
 
     public void EraseInfo ()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);        
     }
 }

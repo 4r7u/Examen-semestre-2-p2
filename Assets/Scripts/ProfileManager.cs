@@ -9,15 +9,18 @@ public class profileManager : MonoBehaviour
     [SerializeField] private Profile profile;
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text nivel;
-    [SerializeField] private Image image;
+    [SerializeField] private RawImage image;
     [SerializeField] private Color color;
 
     private void Start()
     {
         title.text = profile.level.ToString();
-        //image.sprite = profile.image;
         nivel.text = profile.level;
-        
-        //gameObject.GetComponent<Image>().color = profile.color;
+        gameObject.GetComponent<RawImage>().color = profile.color;
+    }
+
+    private void Update()
+    {
+        //gameObject.GetComponent<RawImage>().color = profile.color;
     }
 }

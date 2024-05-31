@@ -39,8 +39,8 @@ public class PlayerControls : MonoBehaviour {
 	void Update () {
 
         // user has requested to qui the application
-        if (Input.GetKey("escape"))
-            Application.Quit();
+        //if (Input.GetKey("escape"))
+        //    Application.Quit();
 
         // get input
         float movement = Input.GetAxis("Vertical") * m_movementSpeed;

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ee57403c585b343aebf4ba76e5b87e, type: 3}
   m_Name: Profile
   m_EditorClassIdentifier: 
-  name: "asd\u200B"
+  name: "Rob\u200B"
   level: 1
-  image: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  image: {fileID: 2800000, guid: 4c03ce3c061ea4d4091b218a90dfad39, type: 3}
+  color:
+    serializedVersion: 2
+    rgba: 4293097418
