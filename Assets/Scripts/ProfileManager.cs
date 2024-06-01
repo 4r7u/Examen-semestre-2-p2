@@ -16,6 +16,7 @@ public class profileManager : MonoBehaviour
     {
         title.text = profile.level.ToString();
         nivel.text = profile.level.ToString();
+
         //gameObject.GetComponent<RawImage>().color = profile.color;
     }
 

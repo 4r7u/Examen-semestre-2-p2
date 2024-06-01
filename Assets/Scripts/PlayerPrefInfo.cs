@@ -26,6 +26,7 @@ public class PlayerPrefInfo : MonoBehaviour
 
         profile.name = name.text;
         profile.image = texture[img];
+        profile.level = 0;
 
         if (img == 0)
         {
