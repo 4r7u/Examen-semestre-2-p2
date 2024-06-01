@@ -6,7 +6,7 @@ using UnityEngine;
 public class Profile : ScriptableObject
 {
     public new string name;
-    public string level;
+    public int level;
     public Texture2D image;
     public Color32 color;
 }

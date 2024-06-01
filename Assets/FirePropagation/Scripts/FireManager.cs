@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class FireManager : MonoBehaviour {
+    public Profile profile;
     private Terrain m_terrain = null; // terrain should be the parent GameObject of this object
     [SerializeField][Tooltip("The Windzone to be used for the simulation.")]
     private WindZone m_windZone;

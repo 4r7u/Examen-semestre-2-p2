@@ -60,6 +60,9 @@ public class FireGrid : MonoBehaviour {
     private bool m_gridCreated = false;
     private bool m_gridSlowBuild = true;
 
+    private int contador;
+    [SerializeField] Profile m_profile;
+
     void Start()
     {
         // If a tag was not set in the editor then fallback to slower why of finding the object
@@ -114,6 +117,7 @@ public class FireGrid : MonoBehaviour {
                 m_terrianName = m_fireManager.terrain.name;
                 m_fastSim = !m_fireManager.detailedSimulation; // invert, detailed == true, fast sim == false
                 m_gridSlowBuild = m_fireManager.staggeredGridConstruction;
+                m_profile = m_fireManager.profile;
 
                 // Increase the counter
                 m_fireManager.AddActiveFireGrid();
@@ -185,6 +189,9 @@ public class FireGrid : MonoBehaviour {
                 m_cells[(int)ArrayCenter.x, (int)ArrayCenter.y].GetComponent<FireCell>().ignitionTemperature = 0.0f;
                 m_cells[(int)ArrayCenter.x, (int)ArrayCenter.y].GetComponent<FireCell>().HeatsUp();
                 m_centerCellIgnited = true;
+
+                //contador += 1;
+                //Debug.Log(contador);
             }
         
             // Fast or detailed simulation
@@ -287,6 +294,7 @@ public class FireGrid : MonoBehaviour {
         cellData.combustionValue = m_combustionRateValue;
         cellData.cellSize = m_cellSize;
 
+
         yield return null;
 
         // create the cells in the grid
@@ -303,7 +311,7 @@ public class FireGrid : MonoBehaviour {
                 FireCell firecell = m_cells[x, y].GetComponent<FireCell>();
 
                 cellData.propagationSpeed = GetValuesFromFuelType((int)worldPosition.x, (int)worldPosition.z, out cellData.HP, out cellData.fuel, out cellData.moisture);
-                firecell.SetupCell(false, m_firePrefab, cellData, m_terrianName, m_fireManager.cellFireSpawnPositions);
+                firecell.SetupCell(false, m_firePrefab, cellData, m_terrianName, m_fireManager.cellFireSpawnPositions,m_profile);
 
                 // modify the heat of the fire, to make the fire burn slower the greater the distance the fire is from the start position
                 float baisDistance = Vector3.Distance(firecell.position, transform.position);
@@ -364,7 +372,7 @@ public class FireGrid : MonoBehaviour {
                 FireCell firecell = m_cells[x, y].GetComponent<FireCell>();
 
                 cellData.propagationSpeed = GetValuesFromFuelType((int)worldPosition.x, (int)worldPosition.z, out cellData.HP, out cellData.fuel, out cellData.moisture);
-                firecell.SetupCell(false, m_firePrefab, cellData, m_terrianName, m_fireManager.cellFireSpawnPositions);
+                firecell.SetupCell(false, m_firePrefab, cellData, m_terrianName, m_fireManager.cellFireSpawnPositions,m_profile);
 
                 // Modify the heat of the fire, to make the fire burn slower the greater the distance the fire is from the start position
                 float baisDistance = Vector3.Distance(firecell.position, transform.position);

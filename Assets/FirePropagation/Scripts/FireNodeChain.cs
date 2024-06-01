@@ -22,6 +22,8 @@ public class FireNodeChain : MonoBehaviour {
     private bool m_replacedAlready = false;
     private bool m_validChain = true;
 
+    private int contador;
+
     public float propagationSpeed
     {
         get { return m_firePropagationSpeed; }
@@ -69,6 +71,7 @@ public class FireNodeChain : MonoBehaviour {
         if (m_validChain)
         {
             PropagateFire();
+ 
 
             if (m_destroyAfterFire && !m_destroyedAlready)
                 DestroyAfterFire();
@@ -88,6 +91,7 @@ public class FireNodeChain : MonoBehaviour {
             {
                 for (int child = 0; child < m_fireNodes[i].m_links.Count; child++)
                 {
+                   
                     if (m_fireNodes[i].m_links[child].GetComponent<FireNode>().HP > 0.0f)
                     {
                         m_fireNodes[i].m_links[child].GetComponent<FireNode>().HP -= m_firePropagationSpeed * Time.deltaTime;

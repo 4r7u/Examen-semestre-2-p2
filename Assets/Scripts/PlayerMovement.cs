@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    private int fires;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -47,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        fires = GameObject.FindGameObjectsWithTag("Fire").Length;
+        //Debug.Log(fires);
+
     }
 
     private void MyInput()

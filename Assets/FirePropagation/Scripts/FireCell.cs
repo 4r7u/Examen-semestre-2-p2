@@ -31,6 +31,9 @@ public class FireCell : MonoBehaviour {
     private int m_iginitionCounter = 0;
     private Vector2[] m_firesPositions;
 
+    private int contador;
+    public Profile m_profile;
+
     public Vector3 position { get { return transform.position; } }
     public float fireTemperature
     {
@@ -65,6 +68,7 @@ public class FireCell : MonoBehaviour {
             m_extinguish = true;
 
         m_pIgnition = m_ignitionTemperature;
+
     }
 
     // brief Allows inital data values to be set
@@ -73,7 +77,7 @@ public class FireCell : MonoBehaviour {
     // param CellData The cell data
     // param String Name of the terrain
     // param Vector2[] The positions within the cell a fire should be instantiated, requires at least 1 position in the cell
-    public void SetupCell(bool alight, GameObject fire, CellData data, string terrainName, Vector2[] firesPositionsInCell)
+    public void SetupCell(bool alight, GameObject fire, CellData data, string terrainName, Vector2[] firesPositionsInCell, Profile profile)
     {
         m_isAlight = alight;
         m_firePrefab = fire;
@@ -89,6 +93,7 @@ public class FireCell : MonoBehaviour {
         m_fireBox.radius = new Vector3(boxExtents, boxExtents, boxExtents);
         m_combustionConstant = data.combustionValue;
         SetInitialFireValues(data.airTemperature, data.propagationSpeed);
+        m_profile = profile;
     }
 
     // brief Delete the fire
@@ -138,6 +143,7 @@ public class FireCell : MonoBehaviour {
         for (int i = 0; i < m_fires.Length; i++)
         {
             m_fires[i] = (GameObject)Instantiate(Fire, position + new Vector3(m_firesPositions[i].x, 0.0f, m_firesPositions[i].y), new Quaternion(), transform);
+           
         }
     }
 
@@ -177,6 +183,7 @@ public class FireCell : MonoBehaviour {
     {
         if (m_instantiatedInCell == false)
         {
+           
             InstantiateFire(transform.position, m_firePrefab);
             m_instantiatedInCell = true;
             m_fireProcessHappening = true;
@@ -185,6 +192,10 @@ public class FireCell : MonoBehaviour {
             {
                 FireVisualManager visualMgr = m_fires[i].GetComponent<FireVisualManager>();
                 visualMgr.SetHeatState();
+
+                m_profile.level += 1;
+                //contador += 1;
+                Debug.Log(m_profile.level);
             }
         }
 
@@ -203,6 +214,8 @@ public class FireCell : MonoBehaviour {
     {
         if (m_fireJustStarted && !m_extingushed)
             Ignition(transform.position, m_firePrefab);
+
+        
     }
 
     // brief The combustion step, if the fire is alight consume fuel in the cell until the fuel has run out

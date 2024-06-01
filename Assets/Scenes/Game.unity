@@ -1240,6 +1240,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4972019778928408256, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4972019778928408256, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151281817095064101, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151281817095064101, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -56.14499
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151281817095064101, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -40.309326
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151281817095064101, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 6302180656254405920, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
         type: 3}
       propertyPath: m_Name
@@ -1253,7 +1283,12 @@ PrefabInstance:
     - target: {fileID: 7175205360053920817, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
         type: 3}
       propertyPath: m_text
-      value: "\u30EC\u30D9\u30EB\uFF1A"
+      value: 'Nivel:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175205360053920817, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -60.463837
       objectReference: {fileID: 0}
     - target: {fileID: 8203339273322681276, guid: d976b91ceac1ce5409c4ee6478bbe1ba,
         type: 3}
@@ -4006,6 +4041,12 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: profile
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ea16dd01547e1e46bd165a3b9ccf17c,
+        type: 2}
     - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
         type: 3}
       propertyPath: m_cellSize
